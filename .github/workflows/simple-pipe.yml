@@ -53,7 +53,8 @@ jobs:
       run: | 
         java -jar greetings-actions.jar ${{ github.event.inputs.myValues }} 
 
-  count-args:            
+  count-args:
+  
     runs-on: ubuntu-latest          
     steps:      
     - id: report-count-1
@@ -62,5 +63,5 @@ jobs:
         arguments-to-count: ${{ github.event.inputs.myValues }}     
     - run: echo      
     - shell: bash       
-    run: |         
-      echo argument count is ${{ steps.report-count.outputs.arg-count }} 
+      run: |         
+        echo argument count is ${{ steps.report-count.outputs.arg-count }} 
