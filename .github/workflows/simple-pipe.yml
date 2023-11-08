@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest          
     steps:      
     - id: report-count
-      uses: xxxccc/arg-count-action@main       
+      uses: GabrielMaties/arg-count-action@main       
       with:          
         arguments-to-count: ${{ github.event.inputs.myValues }}     
     - run: echo      
